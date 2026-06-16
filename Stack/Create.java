@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Create {
     public static void main(String[] args) {
         Stack<String> s = new Stack<>();
+        Stack<String> s1 = new Stack<>();
         /*
          * s.push(10);
          * s.push(20);
@@ -19,7 +20,11 @@ public class Create {
         s.push("Kishan");
         s.push("Ajay");
         s.push("Arshad");
+        s1.push(s.pop());
+        s1.push(s.pop());
+
 
         System.out.println(s);
+        System.out.println(s1);
     }
 }
